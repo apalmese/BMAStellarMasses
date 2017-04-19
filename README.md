@@ -34,6 +34,8 @@ clusterSMass.haloStellarMass(filename="/your/path/to/file/from/smass",outfile="/
 ```
 
 
-## Outputs of smass.py
+## smass.py outputs
 * Age [Gyr] is the mass weighted age, currently only available for Simha SFH
 * sSFR [(M_{sun}/yr)/M_{sun}]
+
+## clusterSMass.py outputs

@@ -32,3 +32,8 @@ To compute clusters stellar masses and \mu*
 import clusterSMass
 clusterSMass.haloStellarMass(filename="/your/path/to/file/from/smass",outfile="/your/path/to/output")
 ```
+
+
+## Outputs of smass.py
+* Age [Gyr] is the mass weighted age, currently only available for Simha SFH
+* sSFR [(M_{sun}/yr)/M_{sun}]

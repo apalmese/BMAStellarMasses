@@ -6,7 +6,7 @@ This code can be used to compute galaxy properties of single galaxies, or to pro
 
 This code was developed by Jim Annis and adapted by Antonella Palmese.
 
-## Usage
+## Usage 1: compute stellar mass for single galaxies
 Prepare the universe input seds that are given by FSPS:
 ```
 import addMinority
@@ -27,6 +27,7 @@ inputDataDict=helperfunctions.read_fits_smassonly("stellar_masses_mags_y1a1_mof_
 smass_only.calc(inputDataDict, outfile=outfile, indir=indir, lib="miles")
 ```
 
+## Usage 2: compute stellar mass for galaxy clusters and the cluster mass proxy \mu*
 To compute clusters stellar masses and \mu*
 ```
 import clusterSMass

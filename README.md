@@ -7,6 +7,9 @@ This code can be used to compute galaxy properties of single galaxies, or to pro
 This code was developed by Jim Annis and adapted by Antonella Palmese.
 
 ## Usage 1: compute stellar mass for single galaxies
+
+### Step 1
+
 Prepare the universe input seds that are given by FSPS:
 ```
 import addMinority
@@ -15,16 +18,29 @@ addMinority.doall(indir)
 addRest.doall(indir)
 ```
 addMinority adds a lower metallicity population to a single metallicity population SSP. addRest adds rest frame colors.
-dir is the directory that contains the universe.
+indir is the directory that contains the universe.
 
-Compute stellar masses for single galaxies:
+### Step 2
+
+Compute stellar masses for single galaxies by running: 
+```
+python start_smass_only.py
+```
+in src/
+
 ```
 import smass_only
-indir = "/data/des60.b/data/palmese/lambda_star/fsps_v3.0_modified_Nov16/OUTPUTS/simha_miles_Nov2016/"
-outfile="stellar_masses_mags_y1a1_mof_BPZ_splashback_cuts_1.out"
 import helperfunctions
-inputDataDict=helperfunctions.read_fits_smassonly("stellar_masses_mags_y1a1_mof_BPZ_splashback_cuts_1.fits")
-smass_only.calc(inputDataDict, outfile=outfile, indir=indir, lib="miles")
+
+basedir = "your-path-to-BMAStellarMasses/"
+libdir = basedir+"lib/simha_miles_test/"
+inputdir = basedir+"in/"
+infile = "test.fits"
+outfile= basedir+"out/test"
+libtype = "test"
+
+inputDataDict=helperfunctions.read_fits_smassonly(inputdir+infile)
+smass_only.calc(inputDataDict, outfile=outfile, indir=libdir, lib=libtype)
 ```
 
 ## Usage 2: compute stellar mass for galaxy clusters and the cluster mass proxy \mu*

@@ -22,11 +22,7 @@ indir is the directory that contains the universe.
 
 ### Step 2
 
-Compute stellar masses for single galaxies by running: 
-```
-python start_smass_only.py
-```
-in src/
+Compute stellar masses for single galaxies by running: ```python start_smass_only.py``` in src/. All that is needed is to modify the paths and filenames in the .py file:
 
 ```
 import smass_only
@@ -42,6 +38,10 @@ libtype = "test"
 inputDataDict=helperfunctions.read_fits_smassonly(inputdir+infile)
 smass_only.calc(inputDataDict, outfile=outfile, indir=libdir, lib=libtype)
 ```
+
+with libtype="miles" and libdir = basedir+"lib/simha_miles_Nov2016/" for a non-test usage. In that case, also the lib/simha_miles_Nov2016.tar.gz file in the directory needs to be decompressed in order to make use of the full template set available.
+
+The galaxies given in input in "infile"
 
 ## Usage 2: compute stellar mass for galaxy clusters and the cluster mass proxy \mu*
 To compute clusters stellar masses and \mu*

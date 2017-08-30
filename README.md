@@ -39,7 +39,7 @@ inputDataDict=helperfunctions.read_fits_smassonly(inputdir+infile)
 smass_only.calc(inputDataDict, outfile=outfile, indir=libdir, lib=libtype)
 ```
 
-with libtype="miles" and libdir = basedir+"lib/simha_miles_Nov2016/" for a non-test usage. In that case, also the lib/simha_miles_Nov2016.tar.gz file in the directory needs to be decompressed in order to make use of the full template set available.
+with libtype="miles" and libdir = basedir+"lib/simha_miles_Nov2016/" for a non-test usage. In that case, also the lib/simha_miles_Nov2016.tar.gz file in the directory needs to be decompressed in order to make use of the full template set available. The test run only takes into account a few templates in order to make the computation quicker.
 
 The galaxies given in input in "infile" expects by default a fits file that includes the following columns:
 * 'ID': galaxy ID

@@ -41,7 +41,10 @@ smass_only.calc(inputDataDict, outfile=outfile, indir=libdir, lib=libtype)
 
 with libtype="miles" and libdir = basedir+"lib/simha_miles_Nov2016/" for a non-test usage. In that case, also the lib/simha_miles_Nov2016.tar.gz file in the directory needs to be decompressed in order to make use of the full template set available.
 
-The galaxies given in input in "infile"
+The galaxies given in input in "infile" expects by default a fits file that includes the following columns:
+'ID': galaxy ID
+'MAG_G', 'MAGERR_G', 'MAG_R', 'MAGERR_R, 'MAG_I', 'MAGERR_I', 'MAG_Z', 'MAGERR_Z': DES griz magnitudes and errors
+'Z': galaxy/cluster redshift
 
 ## Usage 2: compute stellar mass for galaxy clusters and the cluster mass proxy \mu*
 To compute clusters stellar masses and \mu*

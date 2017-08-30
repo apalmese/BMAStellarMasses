@@ -22,7 +22,7 @@ indir is the directory that contains the universe.
 
 ### Step 2
 
-Compute stellar masses for single galaxies by running: ```python start_smass_only.py``` in src/. All that is needed is to modify the paths and filenames in the .py file:
+Compute stellar masses for single galaxies by running: ```python start_smass_only.py``` in src/. All that is needed is to modify the paths and filenames in that file:
 
 ```
 import smass_only

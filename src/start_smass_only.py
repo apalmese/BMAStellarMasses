@@ -1,7 +1,7 @@
 import smass_only
 import helperfunctions
 
-basedir = "/Users/apalmese/work/scripts/BMAStellarMasses/"
+basedir = "your-path-to-BMAStellarMasses/"
 libdir = basedir+"lib/simha_miles_test/"
 inputdir = basedir+"in/"
 infile = "test.fits"

@@ -53,8 +53,8 @@ The output is a fits file named as 'outfile' and contains the following columns:
 * 'kri', 'kii' k-corrections
 * 'distmod' distance modulus
 * 'rabs', 'iabs' absolute magnitudes
-* 'mass', 'mass_err' stellar mass and error
-* 'zmet' BMA of the metallicity
+* 'mass', 'mass_err' stellar mass in Log([M_Sun]) and error
+* 'zmet' BMA of the metallicity in Z/Z_Sun
 * 'best_zmet' best fitting model metallicity
 
 ## Usage 2: compute stellar mass for galaxy clusters and the cluster mass proxy \mu*

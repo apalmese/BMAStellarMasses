@@ -1,7 +1,7 @@
 import smass_only
 import helperfunctions
 
-basedir = "/Users/apalmese/work/scripts/BMAStellarMasses/"
+basedir = "<your-link-to-BMA-code>"
 libdir = basedir+"lib/simha_miles_test/"
 infile = basedir+"in/redmapper_test.fits"
 outfile= basedir+"out/redmapper_test.fits"
